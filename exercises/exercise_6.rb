@@ -9,3 +9,37 @@ puts "Exercise 6"
 puts "----------"
 
 # Your code goes here ...
+store = Employee.create(
+  store_id: 1,
+  first_name: "Janet",
+  last_name: "Yun",
+  hourly_rate: 25,
+)
+
+store = Employee.create(
+  store_id: 2,
+  first_name: "Yun",
+  last_name: "Tep",
+  hourly_rate: 50,
+)
+
+store = Employee.create(
+  store_id: 3,
+  first_name: "Joe",
+  last_name: "Erda",
+  hourly_rate: 70,
+)
+
+store = Employee.create(
+  store_id: 4,
+  first_name: "Singe",
+  last_name: "Iut",
+  hourly_rate: 90,
+)
+
+store = Employee.create(
+  store_id: 5,
+  first_name: "Horace",
+  last_name: "Ben",
+  hourly_rate: 20,
+)

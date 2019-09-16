@@ -10,3 +10,20 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+puts "Please enter a store name"
+ans = gets.chomp
+
+store = Store.create(
+  name: ans,
+  annual_revenue: -123412,
+  mens_apparel: "xyz",
+  womens_apparel: "test"
+)
+
+errs = store.errors.details
+errs_keys = errs.keys
+
+errs_keys.each do |key|
+  # p errs[:name][0][:error]
+  puts "#{key} - reason: #{errs[key][0][:error]}, specific: #{errs[key][0][:value]}"
+end
