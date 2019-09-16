@@ -16,11 +16,13 @@ ans = gets.chomp
 store = Store.create(
   name: ans,
   annual_revenue: -123412,
-  mens_apparel: "xyz",
-  womens_apparel: "test"
+  mens_apparel: false,
+  womens_apparel: false
 )
 
 errs = store.errors.details
+p errs
+
 errs_keys = errs.keys
 
 errs_keys.each do |key|
